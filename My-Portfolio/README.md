@@ -1,10 +1,6 @@
 # Bivon Momanyi - Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Visit%20Website-my--portfolio--9l8.pages.dev-00e5a0?style=for-the-badge&logo=google-chrome&logoColor=white)](https://my-portfolio-9l8.pages.dev)
-
 A professional portfolio website showcasing projects, skills, and expertise in IT Support and web development. Built with modern web technologies and security best practices, optimized for performance and search engines.
-
-🌐 **Live at**: [https://my-portfolio-9l8.pages.dev/](https://my-portfolio-9l8.pages.dev)
 
 ## 🚀 Features
 
@@ -83,7 +79,7 @@ A professional portfolio website showcasing projects, skills, and expertise in I
 ## 📁 File Structure
 
 ```
-my-portfolio-9l8.pages.dev/
+my-portfolio
 ├── index.html                 # Main HTML file
 ├── _headers                   # Security headers for Cloudflare
 ├── _redirects                 # URL redirects and rewrites
@@ -124,9 +120,6 @@ This site is deployed on Cloudflare Pages. The deployment is automated with ever
 
 1. Push your code to the `main` branch
 2. Cloudflare Pages automatically builds and deploys the site
-3. The site is available at:
-   - Primary: [https://my-portfolio-9l8.pages.dev/](https://my-portfolio-9l8.pages.dev/)
-   - Cloudflare URL: [https://my-portfolio.pages.dev](https://my-portfolio.pages.dev)
 
 ### Custom Domain Setup
 
@@ -171,49 +164,8 @@ This site is deployed on Cloudflare Pages. The deployment is automated with ever
 - Node.js (optional, for local development)
 - A Cloudflare account (for deployment)
 
-### Local Development
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/breg254/My-Portfolio.git
-   cd My-Portfolio
-   ```
-
-2. Open in browser:
-   - Simply open `index.html` in your browser, or
-   - Use a local server:
-     ```bash
-     # Python 3
-     python -m http.server 8000
-     # Then visit http://localhost:8000
-     ```
-
-## ☁️ Deployment to Cloudflare Pages
-
-1. Push your code to a GitHub repository
-2. Log in to your Cloudflare dashboard
-3. Go to Pages > Create a project
-4. Connect your GitHub repository
-5. Configure build settings:
-   - Framework preset: None
-   - Build command: (leave empty)
-   - Build output directory: (leave empty)
-6. Click "Save and Deploy"
-
 ## 🔧 Customization
 
-### Update Personal Information
-- Edit `index.html` to update your personal details
-- Update social media links in the contact section
-- Replace placeholder content with your own projects and experience
-
-### Styling
-- Main styles are in `css/styles.css`
-- Color scheme and variables are defined at the top of the CSS file
-- Breakpoints are included for responsive design:
-  - Mobile: < 768px
-  - Tablet: 768px - 1024px
-  - Desktop: > 1024px
 
 ### Form Submission
 To enable the contact form:
