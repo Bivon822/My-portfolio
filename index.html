@@ -627,7 +627,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2026 Bivon. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Bivon. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -658,6 +658,10 @@
 
 <script>
     emailjs.init("P9v3TThH3YZdYDVxn");
+</script>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
