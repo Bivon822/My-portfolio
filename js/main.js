@@ -102,33 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Contact form submission
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Basic form validation
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields');
-                return;
-            }
-            
-            // Here you would typically send the form data to a server
-            alert('Thank you for your message! I will get back to you soon.');
-            
-            // Reset form
-            contactForm.reset();
-        });
-    }
-    
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -150,42 +123,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animation on scroll
     function reveal() {
         const reveals = document.querySelectorAll('section');
-        
+
         reveals.forEach(reveal => {
             const windowHeight = window.innerHeight;
             const revealTop = reveal.getBoundingClientRect().top;
             const revealPoint = 150;
-            
+
             if (revealTop < windowHeight - revealPoint) {
                 reveal.classList.add('active');
             }
         });
     }
-    
+
     window.addEventListener('scroll', reveal);
-    
-    // Newsletter form submission
-    const newsletterForm = document.querySelector('.newsletter-form');
-    
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = this.querySelector('input').value;
-            
-            if (!email) {
-                alert('Please enter your email address');
-                return;
-            }
-            
-            // Here you would typically send the email to a server
-            // For demonstration, we'll just show a success message
-            alert('Thank you for subscribing to my newsletter!');
-            
-            // Reset form
-            newsletterForm.reset();
-        });
-    }
 });
 
 
@@ -194,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const dynamicContent = document.getElementById("dynamic-text");
 
-  const phrases = ["IT Support...", "FullStack Developer...", "UX/UI Designer..."]
+  const phrases = ["Software Developer...", "IT Support Specialist..."]
   let pharseIndex = 0;
   let letterIndex = 0;
   const typingSpeed = 150;
@@ -234,16 +184,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   printLetters(phrases[pharseIndex]);
-
-  window.addEventListener("scroll", function () {
-      console.log(this.window.scrollY)
-      let intro = this.document.querySelector(".intro");
-      if (this.window.scrollY >= (intro.offsetHeight + intro.offsetTop)) {
-          this.document.querySelector(".header").style.position = "sticky";
-      } else {
-          this.document.querySelector(".header").style.position = "revert";
-
-      }
-  })
 })
 
